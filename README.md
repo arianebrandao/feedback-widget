@@ -48,17 +48,30 @@ Esse projeto foi desenvolvido com as seguintes tecnologias no frontend:
 ## Como executar
 
 - Clone o repositório
-- Configure os dados do Mailtrap em `.env`
-- Para iniciar o server, entre na pasta `cd server`
-- Instale as dependências com `npm install`
-- Configure o banco de dados `sqlite` (server/prisma/schema.prisma) e crie as tabelas com `npx prisma migrate deploy`
-- Inicie o servidor com `npm run dev` (deve rodar em [`localhost:3333`](http://localhost:3333))
 
+- Para iniciar o server, entre na pasta `cd server`
+- Coloque seus dados do Mailtrap em `.env.example` e renomeie para `.env`
+- Configure os arquivos `server/prisma/schema.prisma` e `server/prisma/migrations/migration_lock.toml` para usar o provider `sqlite`
+- Instale as dependências com `npm install`
+- Crie as tabelas do banco de dados com `npx prisma migrate deploy`
+- Inicie o servidor com `npm run dev` (deve rodar em [`localhost:3333`](http://localhost:3333))
+- 
 - Para iniciar o app, entre na pasta `cd web`
+- Configure o arquivo `.env.example` e renomeie para `.env`
 - Instale as dependências com `npm install`
 - Inicie o app com `npm run dev` (deve rodar em [`localhost:3000`](http://localhost:3000))
 
-## Como testar
+## Testes
+O projeto deve passar em alguns testes unitários:
+
+- should be able to submit a feedback
+- should not be able to submit a feedback without a type
+- should not be able to submit a feedback without a comment
+- should not be able to submit a feedback with an invalid screenshot
+- should be able to createFeedbackSpy
+- should be able to sendMailSpy
+
+Para rodar os testes, use o comando `npm run test` dentro do diretório server.
 
 ## To do
 - Tema light/dark
