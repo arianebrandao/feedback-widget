@@ -48,14 +48,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias no frontend:
 ## Como executar
 
 - Clone o repositório
-
 - Para iniciar o server, entre na pasta `cd server`
 - Coloque seus dados do Mailtrap em `.env.example` e renomeie para `.env`
 - Configure os arquivos `server/prisma/schema.prisma` e `server/prisma/migrations/migration_lock.toml` para usar o provider `sqlite`
 - Instale as dependências com `npm install`
 - Crie as tabelas do banco de dados com `npx prisma migrate deploy`
 - Inicie o servidor com `npm run dev` (deve rodar em [`localhost:3333`](http://localhost:3333))
-- 
 - Para iniciar o app, entre na pasta `cd web`
 - Configure o arquivo `.env.example` e renomeie para `.env`
 - Instale as dependências com `npm install`
