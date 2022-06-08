@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    //origin: "http://localhost:3000",
+    origin: "https://feedback-widget-arianebrandao.vercel.app",
   })
 ); // controle de segurança do backend
 app.use(express.json());

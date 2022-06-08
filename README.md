@@ -10,7 +10,7 @@ front-end mobile em React Native.
 
 ## App online para testar
 
-App online: [](). Front-end hospedado no [Vercel](https://vercel.com/) e back-end hospedado no [Railway](https://railway.app/).
+App online: [feedback-widget-arianebrandao.vercel.app](https://feedback-widget-arianebrandao.vercel.app/). Front-end hospedado no [Vercel](https://vercel.com/) e back-end hospedado no [Railway](https://railway.app/).
 
 ## Projeto Feedback Widget
 
