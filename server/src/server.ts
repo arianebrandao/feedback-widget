@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from "express";
 import { routes } from "./routes";
 import cors from "cors";
@@ -11,7 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://feedback-widget-arianebrandao.vercel.app",
+    origin: process.env.APP_URL,
   })
 ); // controle de segurança do backend
 app.use(express.json());
