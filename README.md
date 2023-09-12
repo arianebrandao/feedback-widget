@@ -10,7 +10,7 @@ front-end mobile em React Native.
 
 ## App online para testar
 
-App online: [feedback-widget-arianebrandao.vercel.app](https://feedback-widget-arianebrandao.vercel.app/). Front-end hospedado no [Vercel](https://vercel.com/) e back-end estava hospedado no [Railway](https://railway.app/), mas esse serviço passou a ser pago, então irei migrar para outro serviço em breve, portanto o app não está funcionando no momento.
+App online: [feedback-widget-arianebrandao.vercel.app](https://feedback-widget-arianebrandao.vercel.app/). Front-end hospedado na [Vercel](https://vercel.com/), back-end hospedado no [Render](https://render.com) e banco de dados hospedado no [Supabase](https://supabase.com/).
 
 ## Projeto Feedback Widget
 
@@ -41,7 +41,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias no frontend:
 - [Vite](https://vitejs.dev)
 - [Axios](https://axios-http.com)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [html2canvas (para tirar scrrenshot)](https://github.com/niklasvh/html2canvas)
+- [html2canvas (para tirar screenshot)](https://github.com/niklasvh/html2canvas)
 - [Headless UI (para acessibilidade)](https://headlessui.dev/)
 - [Phosphor Icons](https://github.com/phosphor-icons/phosphor-react)
 
