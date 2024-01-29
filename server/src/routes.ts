@@ -2,6 +2,7 @@ import express from "express";
 import { SubmitFeedbackUseCase } from "./use-cases/submite-feedback-use-case";
 import { PrismaFeedbacksRepository } from "./repositories/prisma/prisma-feedbacks-repository";
 import { NodemailMailerAdapter } from "./adapters/nodemailer/nodemailer-mail-adapter";
+import { DatabaseHasFeedbacks } from "./use-cases/database-has-feedbacks";
 
 export const routes = express.Router();
 
@@ -30,3 +31,5 @@ routes.post("/feedbacks", async (req, res) => {
     return res.status(500).send();
   }
 });
+
+routes.get("/feedbacks/exists", new DatabaseHasFeedbacks().handle);
