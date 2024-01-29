@@ -4,9 +4,9 @@ const prismaClient = new PrismaClient();
 
 class DatabaseHasFeedbacksService {
   async execute() {
-    const feedbacksCount = await prismaClient.feedback.count();
+    const feedbacksCount: number = await prismaClient.feedback.count();
 
-    return feedbacksCount;
+    return feedbacksCount > 0;
   }
 }
 
