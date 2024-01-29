@@ -2,9 +2,7 @@ import express from "express";
 import { SubmitFeedbackUseCase } from "./use-cases/submite-feedback-use-case";
 import { PrismaFeedbacksRepository } from "./repositories/prisma/prisma-feedbacks-repository";
 import { NodemailMailerAdapter } from "./adapters/nodemailer/nodemailer-mail-adapter";
-import { DatabaseHasFeedbacks } from "./use-cases/database-has-feedbacks";
 import { CheckConnection } from "./use-cases/check-connection";
-import { prisma } from "./prisma";
 
 export const routes = express.Router();
 
@@ -34,5 +32,4 @@ routes.post("/feedbacks", async (req, res) => {
   }
 });
 
-routes.get("/feedbacks/exists", new DatabaseHasFeedbacks().handle);
 routes.get("/check-connection", new CheckConnection().handle);
