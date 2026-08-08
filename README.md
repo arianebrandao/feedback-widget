@@ -2,19 +2,13 @@
   <img alt="NLW Return 2022" src=".github/app.png" width="100%">
 </p>
 
-## 🚀 NLW Return Impulse 2022
+## Projeto Feedback Widget
 
-Esse projeto foi desenvolvido durante o evento [NLW Return Impulse 2022](https://lp.rocketseat.com.br/nlw-return) da RocketSeat.
-O objetivo do evento é desenvolver uma aplicação completa, desde o back-end em Node.js, front-end para web em ReactJS,
-front-end mobile em React Native.
+Esse é um widget que pode ser usado em qualquer app para coletar feedback (de bug, sugestão ou outros). O usuário escolhe o tipo de feedback, digita o comentário e pode clicar no botão que tira a screenshot automaticamente, então o feedback é enviado para o e-mail configurado no app e salvo no banco de dados.
 
 ## App online para testar
 
 App online: [feedback-widget-arianebrandao.vercel.app](https://feedback-widget-arianebrandao.vercel.app/). Front-end hospedado na [Vercel](https://vercel.com/), back-end hospedado no [Render](https://render.com) e banco de dados hospedado no [Supabase](https://supabase.com/).
-
-## Projeto Feedback Widget
-
-Esse é um widget que pode ser usado em qualquer app para coletar feedback (de bug, sugestão ou outros). O usuário escolhe o tipo de feedback, digita o comentário e pode clicar no botão que tira a screenshot automaticamente, então o feedback é enviado para o e-mail configurado no app e salvo no banco de dados.
 
 ## Layout
 
