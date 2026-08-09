@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "npx tsc",
-    "prestart": "npx prisma migrate deploy",
+    "prestart": "DATABASE_URL=$DIRECT_URL npx prisma migrate deploy",
     "start": "ts-node src/server.ts",
     "dev": "ts-node-dev src/server.ts"
   },
